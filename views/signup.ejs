@@ -1,0 +1,42 @@
+<%- include("partials/head") %>
+
+<body>
+  <header>
+    <div class="mainHeader">
+      <div class="pageTitle">
+        <h1> signup </h1>
+      </div>
+    </div>
+  </header>
+
+  <form id="signupForm" method="POST" action="/signup">
+    <div class="form-group">
+      <label for="signupUsername">Username</label>
+      <input type="text" class="form-control" name="signupUsername" id="signupUsername" aria-describedby="usernameHelp" placeholder="Enter Username">
+      <span id="userMsg"></span>
+    </div>
+    <div class="form-group">
+      <label for="signupEmail">Email address</label>
+      <input type="email" class="form-control" name="signupEmail" id="signupEmail" aria-describedby="emailHelp" placeholder="Enter email">
+      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+      <span id="emailMsg"></span>
+    </div>
+    <div class="form-group">
+      <label for="signupPassword">Password</label>
+      <input type="password" class="form-control" name="signupPassword" id="signupPassword" placeholder="Password">
+      <span id="passwordMsg1"></span>
+    </div>
+    <div class="form-group">
+      <label for="signupPasswordConfirm">Confirm Password</label>
+      <input type="password" class="form-control" name="signupPasswordConfirm" id="signupPasswordConfirm" placeholder="Confirm Password">
+      <span id="passwordMsg2"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+
+  <script src="/javascript/signupCheck.js"></script>
+</body>
+
+
+
+</html>

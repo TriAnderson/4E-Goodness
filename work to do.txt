@@ -1,0 +1,9 @@
+index.ejs
+  Improve design and remove unnecessary things
+
+login.ejs
+  Get it to send to admin subroute
+
+signup.ejs
+  get it to send new user to user subroute without logging in
+  again
